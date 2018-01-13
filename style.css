@@ -1,0 +1,206 @@
+.content-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container .app-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.content-container a:link, .content-container a:visited {
+  text-decoration: none;
+}
+
+.content-container .app-button:hover {
+  opacity: 0.8;
+  transition: background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s, border-bottom-color ease-in-out 0.25s;
+}
+
+.app-container {
+  max-height: 100vh;
+  overflow: visible;
+  color: black;
+}
+
+.view-container {
+  display: flex;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  height: 5%;
+}
+
+.header .header-link {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  border: 1px black solid;
+  box-sizing: border-box;
+}
+
+.header .header-link a {
+  width: 100%;
+  text-align: center;
+}
+
+.redBg {
+  background-color: red;
+  border-radius: 51px;
+  color: white;
+  padding: 5px;
+}
+
+.map-container {
+  flex-direction: row;
+  position: relative;
+}
+
+.map-container .map-area {
+  display: flex;
+  flex: 1;
+}
+
+.map-container .factory-panel {
+  border-left: 1px solid black;
+  display: flex;
+  width: 20%;
+  height: 100%;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
+  right: 0;
+}
+
+.map-container .factory-panel .factory-info {
+  height: 70%;
+  background: hotpink;
+}
+
+.map-container .factory-panel .factory-action-buttons {
+  height: 20%;
+  background: azure;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map-container .factory-panel .factory-action-buttons .button-launch {
+  background: gold;
+}
+
+.map-container .factory-panel .factory-action-buttons .button-details {
+  background: cornflowerblue;
+}
+
+.factory-container {
+  display: flex;
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.factory-container .factory-header {
+  display: flex;
+  height: 7%;
+  margin-bottom: 1%;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.factory-container .factory-header .header-element {
+  align-items: center;
+}
+
+.factory-container .factory-header .factory-name {
+  display: flex;
+  flex: 0 1 100%;
+  text-align: center;
+  background: #02daff;
+  justify-content: center;
+  align-items: center;
+}
+
+.factory-container .factory-header .quote {
+  display: flex;
+  flex: 1 0 67%;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.factory-container .factory-header .author {
+  display: flex;
+  flex: 1 0 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.factory-container .factory-selection {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.factory-container .factory-selection .factory-plate {
+  border: 1px darkblue solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  flex: 1;
+}
+
+.factory-container .factory-selection .factory-plate a {
+  font-weight: normal;
+}
+
+.factory-container .factory-selection .factory-plate-chosen {
+  background: #adff2f63;
+}
+
+.factory-container .factory-selection .factory-plate-chosen a {
+  font-weight: bold;
+}
+
+.factory-container .factory-content {
+  display: flex;
+  flex: 6;
+  height: 40%;
+  flex-direction: row;
+  border-top: 1px solid black;
+}
+
+.factory-container .factory-content .factory-production-table {
+  display: flex;
+  flex: 1;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+
+.factory-container .factory-content .factory-production-rose {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
