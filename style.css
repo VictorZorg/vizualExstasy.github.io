@@ -67,47 +67,10 @@
   padding: 5px;
 }
 
-.map-container {
-  flex-direction: row;
-  position: relative;
-}
-
-.map-container .map-area {
+.zzz {
+  background: yellow;
   display: flex;
-  flex: 1;
-}
-
-.map-container .factory-panel {
-  border-left: 1px solid black;
-  display: flex;
-  width: 20%;
-  height: 100%;
-  flex-direction: column;
-  position: absolute;
-  justify-content: space-between;
-  right: 0;
-}
-
-.map-container .factory-panel .factory-info {
-  height: 70%;
-  background: hotpink;
-}
-
-.map-container .factory-panel .factory-action-buttons {
-  height: 20%;
-  background: azure;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-.map-container .factory-panel .factory-action-buttons .button-launch {
-  background: gold;
-}
-
-.map-container .factory-panel .factory-action-buttons .button-details {
-  background: cornflowerblue;
+  justify-content: center;
 }
 
 .factory-container {
@@ -122,11 +85,10 @@
 
 .factory-container .factory-header {
   display: flex;
-  height: 7%;
-  margin-bottom: 1%;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 10px 0;
 }
 
 .factory-container .factory-header .header-element {
@@ -135,7 +97,6 @@
 
 .factory-container .factory-header .factory-name {
   display: flex;
-  flex: 0 1 100%;
   text-align: center;
   background: #02daff;
   justify-content: center;
@@ -158,8 +119,8 @@
 
 .factory-container .factory-selection {
   display: flex;
-  flex: 1;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .factory-container .factory-selection .factory-plate {
@@ -186,17 +147,18 @@
 
 .factory-container .factory-content {
   display: flex;
-  flex: 6;
-  height: 40%;
+  flex: 8;
   flex-direction: row;
   border-top: 1px solid black;
+  overflow: hidden;
 }
 
 .factory-container .factory-content .factory-production-table {
   display: flex;
-  flex: 1;
+  flex: 2;
   border-right: 1px solid black;
   box-sizing: border-box;
+  overflow: overlay;
 }
 
 .factory-container .factory-content .factory-production-rose {
