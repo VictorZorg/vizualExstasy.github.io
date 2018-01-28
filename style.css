@@ -51,13 +51,17 @@
   align-items: center;
   flex: 1;
   justify-content: center;
-  border: 1px black solid;
+  border: 1px darkred solid;
   box-sizing: border-box;
 }
 
 .header .header-link a {
   width: 100%;
   text-align: center;
+}
+
+.header .header-link img {
+  height: 30px;
 }
 
 .redBg {
@@ -67,10 +71,71 @@
   padding: 5px;
 }
 
-.zzz {
-  background: yellow;
+.map-container {
+  flex-direction: row;
+  position: relative;
+}
+
+.map-container .map-area {
   display: flex;
+  flex: 1;
+}
+
+.map-container .factories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
+.map-container .factory-panel {
+  border-left: 2px solid darkred;
+  display: flex;
+  width: 20%;
+  height: 100%;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
+  right: 0;
+}
+
+.map-container .factory-panel .factory-info {
+  height: 70%;
+}
+
+.map-container .factory-panel .factory-action-buttons {
+  height: 20%;
+  background: azure;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map-container .factory-panel .factory-action-buttons .button-launch {
+  background: gold;
+}
+
+.map-container .factory-panel .factory-action-buttons .button-details img {
+  height: 30px;
+}
+
+.main-container .slidein {
+  animation: mymove 5s infinite;
+}
+
+.main-container .logo {
+  animation: mymove 5s infinite;
+}
+
+.main-container .greetings {
   justify-content: center;
+  display: flex;
+  font-size: 3em;
+  margin: 5% 0;
+}
+
+.main-container .greetings .logo {
+  margin-left: 20px;
 }
 
 .factory-container {
@@ -135,6 +200,7 @@
 
 .factory-container .factory-selection .factory-plate a {
   font-weight: normal;
+  text-align: center;
 }
 
 .factory-container .factory-selection .factory-plate-chosen {
@@ -149,14 +215,14 @@
   display: flex;
   flex: 8;
   flex-direction: row;
-  border-top: 1px solid black;
+  border-top: 1px solid darkred;
   overflow: hidden;
 }
 
 .factory-container .factory-content .factory-production-table {
   display: flex;
   flex: 2;
-  border-right: 1px solid black;
+  border-right: 1px solid darkred;
   box-sizing: border-box;
   overflow: overlay;
 }
@@ -165,4 +231,12 @@
   display: flex;
   flex: 1;
   box-sizing: border-box;
+  flex-flow: column;
+}
+
+.factory-container .factory-content .factory-production-rose .rose-header {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
 }
