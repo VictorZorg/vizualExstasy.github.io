@@ -134,8 +134,8 @@
   margin: 5% 0;
 }
 
-.main-container .greetings .logo {
-  margin-left: 20px;
+.main-container .logo {
+  text-align: center;
 }
 
 .factory-container {
@@ -239,4 +239,36 @@
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
+}
+
+.factory-container .car-table-content {
+  width: 100%;
+}
+
+.factory-container .car-table-content .table-container {
+  width: 100%;
+}
+
+.factory-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.factory-container table td, .factory-container table th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px;
+}
+
+.factory-container .column-name {
+  display: flex;
+  justify-content: center;
+}
+
+.factory-container .column-name .column-content {
+  margin-left: 15px;
+}
+
+.factory-container .column-name:nth-child(0) {
+  border-right: 2px darkred solid;
 }
